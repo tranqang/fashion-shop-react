@@ -1,0 +1,278 @@
+[
+  {
+    "id": 1,
+    "name": "Trang chủ",
+    "url": "/",
+    "type": 1,
+    "children": null,
+    "parentId": null
+  },
+  {
+    "id": 2,
+    "name": "Giới thiệu",
+    "url": "/gioi-thieu",
+    "type": 1,
+    "children": null,
+    "parentId": null
+  },
+  {
+    "id": 3,
+    "name": "Sản phẩm",
+    "url": "/collections/all",
+    "type": 1,
+    "children": [
+      {
+        "id": 9,
+        "name": "Áo thun",
+        "url": "/collections/ao-thun",
+        "type": 1,
+        "image": "image1",
+        "children": [
+          {
+            "id": 14,
+            "name": "Áo thun polo",
+            "url": "/collections/ao-thun-polo",
+            "type": 1,
+            "children": null,
+            "parentId": 9
+          },
+          {
+            "id": 15,
+            "name": "Áo thun unisex",
+            "url": "/collections/ao-thun-unisex",
+            "type": 1,
+            "children": null,
+            "parentId": 9
+          },
+          {
+            "id": 16,
+            "name": "Áo thun trơn",
+            "url": "/collections/ao-thun-tron",
+            "type": 1,
+            "children": null,
+            "parentId": 9
+          },
+          {
+            "id": 17,
+            "name": "Áo thun T-shirt",
+            "url": "/collections/ao-thun-t-shirt",
+            "type": 1,
+            "children": null,
+            "parentId": 9
+          }
+        ],
+        "parentId": 3
+      },
+      {
+        "id": 10,
+        "name": "Quần short",
+        "url": "/collections/quan-short",
+        "type": 1,
+        "image": "image2",
+        "children": [
+          {
+            "id": 18,
+            "name": "Quần short kaki",
+            "url": "/collections/quan-short-kaki",
+            "type": 1,
+            "children": null,
+            "parentId": 10
+          },
+          {
+            "id": 19,
+            "name": "Quần short đũi",
+            "url": "/collections/quan-short-dui",
+            "type": 1,
+            "children": null,
+            "parentId": 10
+          },
+          {
+            "id": 20,
+            "name": "Quần short gió",
+            "url": "/collections/quan-short-gio",
+            "type": 1,
+            "children": null,
+            "parentId": 10
+          },
+          {
+            "id": 21,
+            "name": "Quần short thể thao",
+            "url": "/collections/quan-short-the-thao",
+            "type": 1,
+            "children": null,
+            "parentId": 10
+          }
+        ],
+        "parentId": 3
+      },
+      {
+        "id": 11,
+        "name": "Sơ mi dài tay",
+        "url": "/collections/so-mi-dai-tay",
+        "type": 1,
+        "image": "image3",
+        "children": [
+          {
+            "id": 22,
+            "name": "Sơ mi dài tay dạ",
+            "url": "/collections/so-mi-dai-tay-da",
+            "type": 1,
+            "children": null,
+            "parentId": 11
+          },
+          {
+            "id": 23,
+            "name": "Sơ mi dài tay họa tiết",
+            "url": "/collections/so-mi-dai-tay-hoa-tiet",
+            "type": 1,
+            "children": null,
+            "parentId": 11
+          },
+          {
+            "id": 24,
+            "name": "Sơ mi dài tay kẻ",
+            "url": "/collections/so-mi-dai-tay-ke",
+            "type": 1,
+            "children": null,
+            "parentId": 11
+          },
+          {
+            "id": 25,
+            "name": "Sơ mi dài tay trơn",
+            "url": "/collections/so-mi-dai-tay-tron",
+            "type": 1,
+            "children": null,
+            "parentId": 11
+          }
+        ],
+        "parentId": 3
+      },
+      {
+        "id": 12,
+        "name": "Sơ mi ngắn tay",
+        "url": "/collections/so-mi-ngan-tay",
+        "type": 1,
+        "image": "image4",
+        "children": [
+          {
+            "id": 26,
+            "name": "Áo aloha",
+            "url": "/collections/ao-aloha",
+            "type": 1,
+            "children": null,
+            "parentId": 12
+          },
+          {
+            "id": 27,
+            "name": "Áo camp shirt",
+            "url": "/collections/ao-camp-shirt",
+            "type": 1,
+            "children": null,
+            "parentId": 12
+          },
+          {
+            "id": 28,
+            "name": "Sơ mi ngắn tay họa tiết",
+            "url": "/collections/so-mi-ngan-tay-hoa-tiet",
+            "type": 1,
+            "children": null,
+            "parentId": 12
+          },
+          {
+            "id": 29,
+            "name": "Sơ mi ngắn tay kẻ",
+            "url": "/collections/so-mi-ngan-tay-ke",
+            "type": 1,
+            "children": null,
+            "parentId": 12
+          }
+        ],
+        "parentId": 3
+      },
+      {
+        "id": 13,
+        "name": "Quần dài",
+        "url": "/collections/quan-dai",
+        "type": 1,
+        "image": "image5",
+        "children": [
+          {
+            "id": 30,
+            "name": "Quần âu",
+            "url": "/collections/quan-au",
+            "type": 1,
+            "children": null,
+            "parentId": 13
+          },
+          {
+            "id": 31,
+            "name": "Quần kaki",
+            "url": "/collections/quan-kaki",
+            "type": 1,
+            "children": null,
+            "parentId": 13
+          },
+          {
+            "id": 32,
+            "name": "Quần jean",
+            "url": "/collections/quan-jean",
+            "type": 1,
+            "children": null,
+            "parentId": 13
+          },
+          {
+            "id": 33,
+            "name": "Quần gió",
+            "url": "/collections/quan-gio",
+            "type": 1,
+            "children": null,
+            "parentId": 13
+          }
+        ],
+        "parentId": 3
+      }
+    ],
+    "parentId": null
+  },
+  {
+    "id": 4,
+    "name": "Hệ thống cửa hàng",
+    "url": "/he-thong-cua-hang",
+    "type": 1,
+    "children": null,
+    "parentId": null
+  },
+  {
+    "id": 5,
+    "name": "Liên hệ",
+    "url": "/lien-he",
+    "type": 1,
+    "children": null,
+    "parentId": null
+  },
+  {
+    "id": 6,
+    "name": "Tin tức",
+    "url": "/tin-tuc",
+    "type": 1,
+    "children": [
+      {
+        "id": 7,
+        "name": "Kinh nghiệm phối đồ",
+        "url": "/tin-tuc/kinh-nghiem-phoi-do",
+        "type": 1,
+        "children": null,
+        "parentId": 6
+      },
+      {
+        "id": 8,
+        "name": "Sự kiện",
+        "url": "/tin-tuc/su-kien",
+        "type": 1,
+        "children": null,
+        "parentId": 6
+      }
+    ],
+    "parentId": null
+  }
+]

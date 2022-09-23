@@ -1,0 +1,147 @@
+[
+  {
+    "id": 1,
+    "name": "experience",
+    "type": 1
+  },
+  {
+    "id": 2,
+    "name": "event",
+    "type": 1
+  },
+  {
+    "id": 3,
+    "name": "áo thun",
+    "type": 2,
+    "children": [
+      {
+        "id": 8,
+        "name": "áo thun polo",
+        "type": 2
+      },
+      {
+        "id": 9,
+        "name": "áo thun unisex",
+        "type": 2
+      },
+      {
+        "id": 10,
+        "name": "áo thun trơn",
+        "type": 2
+      },
+      {
+        "id": 11,
+        "name": "áo thun t-shirt",
+        "type": 2
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "quần short",
+    "type": 2,
+    "children": [
+      {
+        "id": 12,
+        "name": "quần short kaki",
+        "type": 2
+      },
+      {
+        "id": 13,
+        "name": "quần short đũi",
+        "type": 2
+      },
+      {
+        "id": 14,
+        "name": "quần short gió",
+        "type": 2
+      },
+      {
+        "id": 15,
+        "name": "quần short thể thao",
+        "type": 2
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "name": "sơ mi dài tay",
+    "type": 2,
+    "children": [
+      {
+        "id": 16,
+        "name": "sơ mi dài tay dạ",
+        "type": 2
+      },
+      {
+        "id": 17,
+        "name": "sơ mi dài tay họa tiết",
+        "type": 2
+      },
+      {
+        "id": 18,
+        "name": "sơ mi dài tay kẻ",
+        "type": 2
+      },
+      {
+        "id": 19,
+        "name": "sơ mi dài tay trơn",
+        "type": 2
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "name": "sơ mi ngắn tay",
+    "type": 2,
+    "children": [
+      {
+        "id": 20,
+        "name": "áo aloha",
+        "type": 2
+      },
+      {
+        "id": 21,
+        "name": "áo cam shirt",
+        "type": 2
+      },
+      {
+        "id": 22,
+        "name": "sơ mi ngắn tay họa tiết",
+        "type": 2
+      },
+      {
+        "id": 23,
+        "name": "sơ mi ngắn tay kẻ",
+        "type": 2
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "name": "quần dài",
+    "type": 2,
+    "children": [
+      {
+        "id": 24,
+        "name": "quần âu",
+        "type": 2
+      },
+      {
+        "id": 25,
+        "name": "quần kaki",
+        "type": 2
+      },
+      {
+        "id": 26,
+        "name": "quần jean",
+        "type": 2
+      },
+      {
+        "id": 27,
+        "name": "quần gió",
+        "type": 2
+      }
+    ]
+  }
+]
