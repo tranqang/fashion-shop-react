@@ -18,20 +18,28 @@
   {
     "id": 3,
     "name": "Sản phẩm",
+    "title": "Tất cả sản phẩm",
     "url": "/collections/all",
+    "categoryId": null,
     "type": 1,
+    "desc": "Tất cả những sản phẩm Mới nhất nằm trong BST được mở bán Hàng Tuần sẽ được cập nhật liên tục tại đây. Chắc chắn bạn sẽ tìm thấy những sản phẩm Đẹp Nhất - Vừa Vặn Nhất - Phù Hợp nhất với phong cách của mình.",
     "children": [
       {
         "id": 9,
         "name": "Áo thun",
         "url": "/collections/ao-thun",
+        "categoryId": 3,
         "type": 1,
         "image": "image1",
+        "icon": "iconMenu1",
+        "desc": "Dù có đơn giản đến đâu thì áo thun vẫn luôn là một trong những items không - thể - thiếu trong tủ đồ của bất kỳ chàng trai nào. Đơn giản - Gọn Gàng - Vừa Vặn sẽ là những điều mà Mew Fashion luôn chú ý kỹ đối với một chiếc áo thun. Những mẫu áo Thun Mới nhất đa dạng đủ kiểu dáng từ dài tay, ngắn tay với vô vàn những lựa phong cách khác nhau sẽ được Mew Fashion cập nhật hàng Tuần.",
         "children": [
           {
             "id": 14,
             "name": "Áo thun polo",
-            "url": "/collections/ao-thun-polo",
+            "url": "/collections/ao-thun/ao-thun-polo",
+            "categoryId": 8,
+            "image": "imageMenu1_1",
             "type": 1,
             "children": null,
             "parentId": 9
@@ -39,7 +47,9 @@
           {
             "id": 15,
             "name": "Áo thun unisex",
-            "url": "/collections/ao-thun-unisex",
+            "url": "/collections/ao-thun/ao-thun-unisex",
+            "categoryId": 9,
+            "image": "imageMenu1_2",
             "type": 1,
             "children": null,
             "parentId": 9
@@ -47,7 +57,9 @@
           {
             "id": 16,
             "name": "Áo thun trơn",
-            "url": "/collections/ao-thun-tron",
+            "url": "/collections/ao-thun/ao-thun-tron",
+            "categoryId": 10,
+            "image": "imageMenu1_3",
             "type": 1,
             "children": null,
             "parentId": 9
@@ -55,7 +67,9 @@
           {
             "id": 17,
             "name": "Áo thun T-shirt",
-            "url": "/collections/ao-thun-t-shirt",
+            "url": "/collections/ao-thun/ao-thun-t-shirt",
+            "categoryId": 11,
+            "image": "imageMenu1_4",
             "type": 1,
             "children": null,
             "parentId": 9
@@ -67,13 +81,18 @@
         "id": 10,
         "name": "Quần short",
         "url": "/collections/quan-short",
+        "categoryId": 4,
         "type": 1,
         "image": "image2",
+        "icon": "iconMenu2",
+        "desc": "Nếu phong cách yêu thích hàng ngày của bạn thường theo hơi hướng trẻ trung, năng động thì quần short - một items kinh điển là chắc chắn không thể thiếu trong tủ đồ. Những thiết kế quần Short ở Mew Fashion. chắc chắn sẽ làm hài lòng bạn bởi khả năng dễ dàng ăn nhập với mọi kiểu áo, hoàn cảnh khác nhau.",
         "children": [
           {
             "id": 18,
             "name": "Quần short kaki",
-            "url": "/collections/quan-short-kaki",
+            "url": "/collections/quan-short/quan-short-kaki",
+            "categoryId": 12,
+            "image": "imageMenu2_1",
             "type": 1,
             "children": null,
             "parentId": 10
@@ -81,7 +100,9 @@
           {
             "id": 19,
             "name": "Quần short đũi",
-            "url": "/collections/quan-short-dui",
+            "url": "/collections/quan-short/quan-short-dui",
+            "categoryId": 13,
+            "image": "imageMenu2_2",
             "type": 1,
             "children": null,
             "parentId": 10
@@ -89,7 +110,9 @@
           {
             "id": 20,
             "name": "Quần short gió",
-            "url": "/collections/quan-short-gio",
+            "url": "/collections/quan-short/quan-short-gio",
+            "categoryId": 14,
+            "image": "imageMenu2_3",
             "type": 1,
             "children": null,
             "parentId": 10
@@ -97,7 +120,9 @@
           {
             "id": 21,
             "name": "Quần short thể thao",
-            "url": "/collections/quan-short-the-thao",
+            "url": "/collections/quan-short/quan-short-the-thao",
+            "categoryId": 15,
+            "image": "imageMenu2_4",
             "type": 1,
             "children": null,
             "parentId": 10
@@ -109,13 +134,18 @@
         "id": 11,
         "name": "Sơ mi dài tay",
         "url": "/collections/so-mi-dai-tay",
+        "categoryId": 5,
         "type": 1,
         "image": "image3",
+        "icon": "iconMenu3",
+        "desc": "Nếu đang đắn đo tìm kiếm một chiếc áo giúp bạn luôn ghi trọn điểm Chỉn chu, Gọn gàng trong mắt mọi người thì Sơ Mi luôn là sự lựa chọn số 1. Đa dạng kiểu dáng và phong cách, ở đây bạn chắc chắn sẽ tìm được chiếc áo sơ mi Vừa vặn và phù hợp với mình.",
         "children": [
           {
             "id": 22,
             "name": "Sơ mi dài tay dạ",
-            "url": "/collections/so-mi-dai-tay-da",
+            "url": "/collections/so-mi-dai-tay/so-mi-dai-tay-da",
+            "categoryId": 16,
+            "image": "imageMenu3_1",
             "type": 1,
             "children": null,
             "parentId": 11
@@ -123,7 +153,9 @@
           {
             "id": 23,
             "name": "Sơ mi dài tay họa tiết",
-            "url": "/collections/so-mi-dai-tay-hoa-tiet",
+            "url": "/collections/so-mi-dai-tay/so-mi-dai-tay-hoa-tiet",
+            "categoryId": 17,
+            "image": "imageMenu3_2",
             "type": 1,
             "children": null,
             "parentId": 11
@@ -131,7 +163,9 @@
           {
             "id": 24,
             "name": "Sơ mi dài tay kẻ",
-            "url": "/collections/so-mi-dai-tay-ke",
+            "url": "/collections/so-mi-dai-tay/so-mi-dai-tay-ke",
+            "categoryId": 18,
+            "image": "imageMenu3_3",
             "type": 1,
             "children": null,
             "parentId": 11
@@ -139,7 +173,9 @@
           {
             "id": 25,
             "name": "Sơ mi dài tay trơn",
-            "url": "/collections/so-mi-dai-tay-tron",
+            "url": "/collections/so-mi-dai-tay/so-mi-dai-tay-tron",
+            "categoryId": 19,
+            "image": "imageMenu3_4",
             "type": 1,
             "children": null,
             "parentId": 11
@@ -151,13 +187,18 @@
         "id": 12,
         "name": "Sơ mi ngắn tay",
         "url": "/collections/so-mi-ngan-tay",
+        "categoryId": 6,
         "type": 1,
         "image": "image4",
+        "icon": "iconMenu4",
+        "desc": "Nếu đang đắn đo tìm kiếm một chiếc áo giúp bạn luôn ghi trọn điểm Chỉn chu, Gọn gàng trong mắt mọi người thì Sơ Mi luôn là sự lựa chọn số 1. Đa dạng kiểu dáng và phong cách, ở đây bạn chắc chắn sẽ tìm được chiếc áo sơ mi Vừa vặn và phù hợp với mình.",
         "children": [
           {
             "id": 26,
             "name": "Áo aloha",
-            "url": "/collections/ao-aloha",
+            "url": "/collections/so-mi-ngan-tay/ao-aloha",
+            "categoryId": 20,
+            "image": "imageMenu4_1",
             "type": 1,
             "children": null,
             "parentId": 12
@@ -165,7 +206,9 @@
           {
             "id": 27,
             "name": "Áo camp shirt",
-            "url": "/collections/ao-camp-shirt",
+            "url": "/collections/so-mi-ngan-tay/ao-camp-shirt",
+            "categoryId": 21,
+            "image": "imageMenu4_2",
             "type": 1,
             "children": null,
             "parentId": 12
@@ -173,7 +216,9 @@
           {
             "id": 28,
             "name": "Sơ mi ngắn tay họa tiết",
-            "url": "/collections/so-mi-ngan-tay-hoa-tiet",
+            "url": "/collections/so-mi-ngan-tay/so-mi-ngan-tay-hoa-tiet",
+            "categoryId": 22,
+            "image": "imageMenu4_3",
             "type": 1,
             "children": null,
             "parentId": 12
@@ -181,7 +226,9 @@
           {
             "id": 29,
             "name": "Sơ mi ngắn tay kẻ",
-            "url": "/collections/so-mi-ngan-tay-ke",
+            "url": "/collections/so-mi-ngan-tay/so-mi-ngan-tay-ke",
+            "categoryId": 23,
+            "image": "imageMenu4_4",
             "type": 1,
             "children": null,
             "parentId": 12
@@ -193,13 +240,18 @@
         "id": 13,
         "name": "Quần dài",
         "url": "/collections/quan-dai",
+        "categoryId": 7,
         "type": 1,
         "image": "image5",
+        "icon": "iconMenu5",
+        "desc": "Tủ đồ của một chàng trai yêu thích sự Tinh tế sẽ không bao giờ có thể thiếu vắng đi những chiếc quần dài đầy Lịch lãm và Nam Tính. Bạn có thể dễ dàng tìm được kiểu dáng quần cùng mẫu mã phù hợp nhất với mình trong số vô vàn những thiết kế Mới Nhất luôn được Mew Fashion cập nhật tại đây.",
         "children": [
           {
             "id": 30,
             "name": "Quần âu",
-            "url": "/collections/quan-au",
+            "url": "/collections/quan-dai/quan-au",
+            "categoryId": 24,
+            "image": "imageMenu5_1",
             "type": 1,
             "children": null,
             "parentId": 13
@@ -207,7 +259,9 @@
           {
             "id": 31,
             "name": "Quần kaki",
-            "url": "/collections/quan-kaki",
+            "url": "/collections/quan-dai/quan-kaki",
+            "categoryId": 25,
+            "image": "imageMenu5_2",
             "type": 1,
             "children": null,
             "parentId": 13
@@ -215,7 +269,9 @@
           {
             "id": 32,
             "name": "Quần jean",
-            "url": "/collections/quan-jean",
+            "url": "/collections/quan-dai/quan-jean",
+            "categoryId": 26,
+            "image": "imageMenu5_3",
             "type": 1,
             "children": null,
             "parentId": 13
@@ -223,7 +279,9 @@
           {
             "id": 33,
             "name": "Quần gió",
-            "url": "/collections/quan-gio",
+            "url": "/collections/quan-dai/quan-gio",
+            "categoryId": 27,
+            "image": "imageMenu5_4",
             "type": 1,
             "children": null,
             "parentId": 13

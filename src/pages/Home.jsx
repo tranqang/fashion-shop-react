@@ -5,48 +5,16 @@ import Banner from 'src/components/Banner';
 import BrandCard from 'src/components/BrandCard';
 import IntroduceCard from 'src/components/IntroduceCard';
 import NewsCard from 'src/components/NewsCard';
+import { catalogData } from 'src/data/data';
 import DefaultLayout from 'src/layouts/DefaultLayout';
 import images from 'src/static/images/images';
-// import 'src/static/styles/test.css';
-const contentIntroduce = [
-  {
-    bgSrc: images.bgProduct1,
-    RTL: true,
-    title: 'Sự kiện trong tuần',
-    content: 'Flash Sale',
-    desc: 'Chỉ Áp dụng khi Đặt hàng qua Website',
-    status: true,
-    time: true,
-  },
-  {
-    bgSrc: images.bgProduct2,
-    RTL: false,
-    title: 'Sản phẩm mới',
-    content: 'T-Shirt',
-    desc: 'Nhập mã MEWFASHION giảm 10% với đơn hàng từ 800k',
-  },
-  {
-    bgSrc: images.bgProduct3,
-    RTL: true,
-    title: 'SẢN PHẨM HOT',
-    content: 'QUẦN SHORT',
-    desc: 'Nhập mã MEWFASHION giảm 10% với đơn hàng từ 800k',
-  },
-  {
-    bgSrc: images.bgProduct4,
-    RTL: false,
-    title: 'THỜI TRANG',
-    content: 'ÁO SƠ MI',
-    desc: 'Nhập mã MEWFASHION giảm 10% với đơn hàng từ 800k',
-  },
-];
 
 function Home() {
   return (
     <>
       <Banner />
-      {contentIntroduce.map((content, index) => (
-        <IntroduceCard key={index} {...content} />
+      {catalogData.map(catalog => (
+        <IntroduceCard key={catalog.id} catalog={catalog} />
       ))}
       {/* <IntroduceCard RTL bgSrc={images.bgProduct1} />
       <IntroduceCard bgSrc={images.bgProduct2} />

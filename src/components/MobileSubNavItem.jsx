@@ -2,25 +2,47 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import images from 'src/static/images/images';
 
-function MobileSubNavItem({ open }) {
+function MobileSubNavItem({ open, menu, index, setOpenIndex }) {
   return (
     <li
+      onClick={() => setOpenIndex(index)}
       className={`level0 d-block w-100 position-static ${open ? 'open' : ''}`}
     >
       <Link
-        to=''
+        to='#'
         title='Áo thun'
         className='position-relative d-flex js-submenu-1 flex-column justify-content-center align-items-center text-center p-2'
       >
         <img
           className='lazy d-block pb-2 m-auto loaded'
-          src={images.iconMenu1}
+          src={images[menu.icon]}
           alt='Áo thun'
         />
-        <span className='line_1 line_2'>Áo thun</span>
+        <span className='line_1 line_2'>{menu.name}</span>
       </Link>
       <ul className='lv1 p-1 position-absolute h-100 m_chill  bg-white'>
-        <li className='level1 position-relative mb-1'>
+        {menu.children.map(child => (
+          <li key={child.id} className='level1 position-relative mb-1'>
+            <Link
+              to={child.url}
+              className='ratio4by3 position-relative has-edge aspect d-block modal-open'
+            >
+              <img
+                src={images[child.image]}
+                className='d-block img position-absolute w-100 h-100 lazy loaded'
+                alt={child.name}
+              />
+
+              <span
+                className='pt-1 position-absolute text-uppercase mr-2 ml-2 align-items-center font-weight-bold '
+                title={child.name}
+              >
+                {child.name}
+              </span>
+            </Link>
+          </li>
+        ))}
+        {/* <li className='level1 position-relative mb-1'>
           <Link
             to='/collections/all'
             className='ratio4by3 position-relative has-edge aspect d-block modal-open'
@@ -119,7 +141,7 @@ function MobileSubNavItem({ open }) {
               Áo thun T-Shirt
             </span>
           </Link>
-        </li>
+        </li> */}
       </ul>
     </li>
   );

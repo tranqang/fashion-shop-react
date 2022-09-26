@@ -49,12 +49,17 @@ const routes = [
     element: <Login />,
     layout: SecondLayout,
   },
+
   {
-    path: '/collections/all',
+    path: 'collections/:collectionType',
     element: <Collections />,
   },
   {
-    path: 'collections/:productId',
+    path: 'collections/:collectionType/:collectionTypeChild',
+    element: <Collections />,
+  },
+  {
+    path: 'product/:productId',
     element: <ProductDetails />,
   },
   {

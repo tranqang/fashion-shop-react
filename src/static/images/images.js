@@ -21,6 +21,22 @@ import imageMenu1_1 from 'src/static/images/172ab8f71f537d45a3efccab3944000c.jpg
 import imageMenu1_2 from 'src/static/images/nguon-si-ao-thun-unisex.jpg';
 import imageMenu1_3 from 'src/static/images/burmxdi.jpg';
 import imageMenu1_4 from 'src/static/images/b716c640eb8f41f587f202b2afb80192.jpg';
+import imageMenu2_1 from 'src/static/images/quan-short-kaki-nam-pull-bear-rps018-den.jpg';
+import imageMenu2_2 from 'src/static/images/245000a2adc7fb8b18c3d8fae4b7ced4.jpg';
+import imageMenu2_3 from 'src/static/images/2727a77d253183d3a9e35e32f3ed24bd.jpg';
+import imageMenu2_4 from 'src/static/images/z1912464598776-9f1ec4fce0a77d68668b8b3073ac2c10.jpg';
+import imageMenu3_1 from 'src/static/images/ao-khoac-so-mi-da-flanel-nau.jpg';
+import imageMenu3_2 from 'src/static/images/ao-so-mi-hoa-tiet-hoa-la.jpg';
+import imageMenu3_3 from 'src/static/images/zhpbgp.jpg';
+import imageMenu3_4 from 'src/static/images/sm-dt-tronbsceffylo-gr-0.jpg';
+import imageMenu4_1 from 'src/static/images/ao-so-mi-nam-hoa-tiet-hoa-la-5.jpg';
+import imageMenu4_2 from 'src/static/images/ignite-summer-camp-legendary-shirt-shirt.jpg';
+import imageMenu4_3 from 'src/static/images/1936839-l.jpg';
+import imageMenu4_4 from 'src/static/images/e2ec0314fcf71725cbf4b7564bc453b1.jpg';
+import imageMenu5_1 from 'src/static/images/49f7da5b9825a56124922264af79ed17.jpg';
+import imageMenu5_2 from 'src/static/images/082e7dd944f3d3185d40632f586f8c1c.jpg';
+import imageMenu5_3 from 'src/static/images/shop-o-jeans.jpg';
+import imageMenu5_4 from 'src/static/images/e43417c0-d79c-11e9-99cf-e58a9510db44.png';
 import telephone from 'src/static/images/telephone.png';
 import messenger from 'src/static/images/messenger.png';
 import zalo from 'src/static/images/zalo_des.png';
@@ -42,6 +58,8 @@ import brand2 from 'src/static/images/brand2.webp';
 import rightArrowIcon from 'src/static/images/icons/right-arrow.png';
 import imgBlog1 from 'src/static/images/untitled-2-1.jpg';
 import closeIcon from 'src/static/images/close.png';
+import filterIcon from 'src/static/images/filter.png';
+import filterCloseIcon from 'src/static/images/filter_close.png';
 import sizeOption from 'src/static/images/size_option.png';
 import facebookBtn from 'src/static/images/social/fb-btn.svg';
 import googleBtn from 'src/static/images/social/gp-btn.svg';
@@ -71,6 +89,22 @@ const images = {
   imageMenu1_2,
   imageMenu1_3,
   imageMenu1_4,
+  imageMenu2_1,
+  imageMenu2_2,
+  imageMenu2_3,
+  imageMenu2_4,
+  imageMenu3_1,
+  imageMenu3_2,
+  imageMenu3_3,
+  imageMenu3_4,
+  imageMenu4_1,
+  imageMenu4_2,
+  imageMenu4_3,
+  imageMenu4_4,
+  imageMenu5_1,
+  imageMenu5_2,
+  imageMenu5_3,
+  imageMenu5_4,
   telephone,
   messenger,
   zalo,
@@ -96,5 +130,7 @@ const images = {
   facebookBtn,
   googleBtn,
   newsImg,
+  filterIcon,
+  filterCloseIcon,
 };
 export default images;

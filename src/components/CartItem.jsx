@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import images from 'src/static/images/images';
 
 function CartItem() {
@@ -11,13 +12,13 @@ function CartItem() {
       />
       <div className='col-12 d-flex p-0'>
         <p className='item-title clearfix mb-2'>
-          <a
-            href='/collections/chi-tiet.html'
+          <Link
+            to='/products/chi-tiet'
             title='Áo thun T-shirt M-F 07'
             className='font-weight-bold'
           >
             Áo thun T-shirt M-F 07
-          </a>
+          </Link>
           <span className='d-block small font-weight-bold'>
             X / Cotton / Trắng
           </span>

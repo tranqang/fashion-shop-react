@@ -1,10 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
+import { menuData } from 'src/data/data';
 import images from 'src/static/images/images';
 import MobileSubNavItem from './MobileSubNavItem';
 
 function MobileSubNav() {
+  const menuMobile = menuData.find(menu => menu.id === 3);
+  const [openIndex, setOpenIndex] = useState(0);
   const mobileSubNavState = useSelector(state => state.toggle.mobile_subnav);
   return (
     <div
@@ -23,11 +26,20 @@ function MobileSubNav() {
           id='menu'
           className='p-0 m-0 h-100 list-unstyled d-lg-flex justify-content-lg-end no_waring'
         >
-          <MobileSubNavItem />
+          {menuMobile.children.map((menuItem, index) => (
+            <MobileSubNavItem
+              key={menuItem.id}
+              setOpenIndex={setOpenIndex}
+              index={index}
+              open={index === openIndex}
+              menu={menuItem}
+            />
+          ))}
+          {/* <MobileSubNavItem />
           <MobileSubNavItem open />
           <MobileSubNavItem />
           <MobileSubNavItem />
-          <MobileSubNavItem />
+          <MobileSubNavItem /> */}
         </ul>
       </div>
     </div>

@@ -3,10 +3,55 @@ import { Link } from 'react-router-dom';
 import images from 'src/static/images/images';
 import ChevronRightIcon from './icons/ChevronRightIcon';
 
-function HeaderSubNav() {
+function HeaderSubNav({ menu }) {
   return (
     <ul className='lv1 list-group p-0 list-unstyled'>
-      <li className=' level1 pr-lg-3 pb-lg-3 pl-3 position-relative cls'>
+      {menu.map(menuItem => {
+        const { id, name, url, children, image } = menuItem;
+        return (
+          <li
+            key={id}
+            className=' level1 pr-lg-3 pb-lg-3 pl-3 position-relative cls'
+          >
+            <Link
+              to={url}
+              className='ratio4by3 position-relative has-edge aspect d-block modal-open'
+              title={name}
+            >
+              <img
+                src={images[image]}
+                className='img position-absolute d-lg-block fade-08 lazy loaded'
+                alt={name}
+              />
+            </Link>
+
+            <Link
+              to={url}
+              className='pt-1 pb-1 pr-1 position-relative js-checkMenu text-uppercase '
+              title={name}
+            >
+              {name}
+            </Link>
+            {children && (
+              <ul className='lv2 list-group p-0 list-unstyled'>
+                {children.map(child => (
+                  <li key={child.id} className='level2 pr-lg-2 '>
+                    <Link
+                      to={child.url}
+                      className='pl-3 pt-2 pb-2 position-relative d-flex'
+                      title={child.name}
+                    >
+                      <ChevronRightIcon />
+                      {child.name}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            )}
+          </li>
+        );
+      })}
+      {/* <li className=' level1 pr-lg-3 pb-lg-3 pl-3 position-relative cls'>
         <Link
           to='/collections/all'
           className='ratio4by3 position-relative has-edge aspect d-block modal-open'
@@ -320,7 +365,7 @@ function HeaderSubNav() {
             </Link>
           </li>
         </ul>
-      </li>
+      </li> */}
     </ul>
   );
 }

@@ -1,0 +1,40 @@
+[
+  {
+    "id": 1,
+    "name": "Flash Sale",
+    "product": [1, 2, 3, 4],
+    "bgSrc": "bgProduct1",
+    "RTL": true,
+    "title": "Sự kiện trong tuần",
+    "desc": "Chỉ Áp dụng khi Đặt hàng qua Website",
+    "status": true,
+    "time": true
+  },
+  {
+    "id": 2,
+    "name": "T-Shirt",
+    "product": [5, 6, 7, 8],
+    "bgSrc": "bgProduct2",
+    "RTL": false,
+    "title": "Sản phẩm mới",
+    "desc": "Nhập mã MEWFASHION giảm 10% với đơn hàng từ 800k"
+  },
+  {
+    "id": 3,
+    "name": "Quần short",
+    "product": [9, 10, 11, 12],
+    "bgSrc": "bgProduct3",
+    "RTL": true,
+    "title": "SẢN PHẨM HOT",
+    "desc": "Nhập mã MEWFASHION giảm 10% với đơn hàng từ 800k"
+  },
+  {
+    "id": 4,
+    "name": "Sơ mi",
+    "product": [13, 14, 15, 16],
+    "bgSrc": "bgProduct4",
+    "RTL": false,
+    "title": "THỜI TRANG",
+    "desc": "Nhập mã MEWFASHION giảm 10% với đơn hàng từ 800k"
+  }
+]

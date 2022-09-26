@@ -3,27 +3,35 @@ import ReactOwlCarousel from 'react-owl-carousel';
 import { Link } from 'react-router-dom';
 import images from 'src/static/images/images';
 
-function ProductDetailsImg() {
+function ProductDetailsImg({ imageList }) {
+  console.log('imageList', imageList);
   const owlRef = useRef();
   return (
     <>
       <div className='product-main-slide mb-4 stk-pro'>
         <div className='row m_more d-none js-product-image-list d-lg-flex remove_html_mobi'>
-          <div className='product-image col-lg-6 col-12 mb-4 image'>
-            <Link
-              to='#'
-              className='position-relative d-block aspect ratio3by4 modal-open'
-              title='Áo thun T-shirt M-F 08 '
-            >
-              <img
-                src={images.imgProduct8_3}
-                alt='Áo thun T-shirt M-F 08 '
-                className='d-block img position-absolute img-contain lazy loaded'
-                id='img_49905244'
-              />
-            </Link>
-          </div>
-          <div className='product-image col-lg-6 col-12 mb-4 image'>
+          {imageList &&
+            imageList.images &&
+            imageList.images.map((image, index) => (
+              <div
+                key={index}
+                className='product-image col-lg-6 col-12 mb-4 image'
+              >
+                <Link
+                  to='#'
+                  className='position-relative d-block aspect ratio3by4 modal-open'
+                  title='Áo thun T-shirt M-F 08 '
+                >
+                  <img
+                    src={image}
+                    alt='Áo thun T-shirt M-F 08 '
+                    className='d-block img position-absolute img-contain lazy loaded'
+                    id='img_49905244'
+                  />
+                </Link>
+              </div>
+            ))}
+          {/* <div className='product-image col-lg-6 col-12 mb-4 image'>
             <Link
               to='#'
               className='position-relative d-block aspect ratio3by4 modal-open'
@@ -120,8 +128,8 @@ function ProductDetailsImg() {
                 id='img_44674977'
               />
             </Link>
-          </div>
-          <div className='col-lg-6 image js-more-image'>
+          </div> */}
+          {/* <div className='col-lg-6 image js-more-image'>
             <Link
               to='#'
               className='position-relative d-block aspect ratio3by4 modal-open'
@@ -136,7 +144,7 @@ function ProductDetailsImg() {
                 +3
               </div>
             </Link>
-          </div>
+          </div> */}
         </div>
       </div>
       <div className='product-thumb-slide swiper-container position-relative cursor-pointer d-lg-none swiper-container-initialized swiper-container-horizontal'>

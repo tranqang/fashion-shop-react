@@ -1,28 +1,29 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import convertPrice from 'src/helpers/convertPrice';
 import images from 'src/static/images/images';
 
-function ProductCard({ status }) {
+function ProductCard({ status, data }) {
   return (
     <div className='product-item position-relative modal-open'>
       <div className='sale-label text-center sale-top-right position-absolute'>
         <span className='small font-weight-bold'>- 11%</span>
       </div>
       <Link
-        to='/collections/chi-tiet'
+        to={`/product/${data.id}`}
         className='thumb d-block modal-open'
-        title='Áo thun T-shirt M-F 08'
+        title={data.name}
       >
         <div className='position-relative w-100 m-0 ratio3by4 has-edge aspect'>
           <img
-            src={images.imgProduct7_1}
+            src={data.primary_image[0]}
             className='d-block img img0 img1 img-cover position-absolute lazy loaded'
-            alt='Áo thun T-shirt M-F 08'
+            alt={data.name}
           />
           <img
-            src={images.imgProduct7_2}
+            src={data.primary_image[1]}
             className='d-block img2 img-cover position-absolute lazy loaded'
-            alt='Áo thun T-shirt M-F 08'
+            alt={data.name}
           />
           <span
             className='action font-weight-bold d-inline-block position-absolute pt-1 pb-1 w-100 text-center'
@@ -35,14 +36,18 @@ function ProductCard({ status }) {
       <div className='item-info mt-1 text-center'>
         <Link
           className='modal-open pl-3 pr-3 line_1'
-          to='/collections/chi-tiet'
-          title='Áo thun T-shirt M-F 08'
+          to='/product/chi-tiet'
+          title={data.name}
         >
-          Áo thun T-shirt M-F 08
+          {data.name}
         </Link>
         <div className='item-price mb-1 '>
-          <span className='special-price font-weight-bold'>249.000₫</span>
-          <del className='old-price pl-1'> 279.000₫</del>
+          <span className='special-price font-weight-bold'>
+            {convertPrice(data.price[0].unit_price)}
+          </span>
+          <del className='old-price pl-1'>
+            {convertPrice(data.price[0].old_price)}
+          </del>
         </div>
       </div>
       {status && (

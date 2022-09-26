@@ -2,14 +2,15 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import images from 'src/static/images/images';
 
-function IntroduceBanner({ bgSrc, RTL, title, content, desc }) {
+function IntroduceBanner({ bgSrc, RTL, title, name, desc }) {
+  console.log(bgSrc);
   return (
     <>
       <div className='bg_pr  position-absolute w-100 h-100 d-none d-lg-block'>
         <div
           className={`fix-image${RTL ? '' : '-left'} position-fixed h-100`}
           style={{
-            backgroundImage: `url(${bgSrc})`,
+            backgroundImage: `url(${images[bgSrc]})`,
           }}
         ></div>
         <div className='m_infor text-center position-absolute p-5'>
@@ -19,7 +20,7 @@ function IntroduceBanner({ bgSrc, RTL, title, content, desc }) {
                 {title}
               </p>
               <h3 className='title_banner mb-1 font-weight-bold text-uppercase'>
-                {content}
+                {name}
               </h3>
               <div className='description mb-3'>{desc}</div>
               <span className='see-more'>
@@ -37,7 +38,7 @@ function IntroduceBanner({ bgSrc, RTL, title, content, desc }) {
       <div className='bg_pr position-absolute w-100 h-100  d-lg-none'>
         <div className='position-relative w-100 m-0 ratio1by1 has-edge aspect d-none d-md-block d-lg-none'>
           <img
-            src={bgSrc}
+            src={images[bgSrc]}
             className='lazy d-block img img-cover position-absolute'
             alt='FLASH SALE'
           />
@@ -49,7 +50,7 @@ function IntroduceBanner({ bgSrc, RTL, title, content, desc }) {
                 {title}
               </p>
               <h3 className='title_banner mb-3 font-weight-bold text-uppercase'>
-                {content}
+                {name}
               </h3>
               <div className='description mb-3'>{desc}</div>
               <span className='see-more'>

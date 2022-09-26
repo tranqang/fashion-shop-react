@@ -3,9 +3,12 @@ import ReactOwlCarousel from 'react-owl-carousel';
 import { Link } from 'react-router-dom';
 import ProductCard from './ProductCard';
 import ClockIcon from './icons/ClockIcon';
-function ProductSlide({ title, ...options }) {
+import { productData } from 'src/data/data';
+function ProductSlide({ title, data, ...options }) {
   const { status, nav, items, time, responsive } = options;
   const owlRef = useRef();
+  const productList = productData.filter(item => data.includes(item.id));
+  console.log(productList);
   return (
     <div className='m_product col-12 mt-5 mb-5'>
       {title && (
@@ -71,36 +74,13 @@ function ProductSlide({ title, ...options }) {
             dots={false}
             responsive={responsive}
           >
-            <div className='item'>
-              <div className='swiper-slide swiper-slide-active'>
-                <ProductCard status={status} />
+            {productList.map(product => (
+              <div key={product.id} className='item'>
+                <div className='swiper-slide swiper-slide-active'>
+                  <ProductCard status={status} data={product} />
+                </div>
               </div>
-            </div>
-            <div className='item'>
-              <div className='swiper-slide swiper-slide-active'>
-                <ProductCard status={status} />
-              </div>
-            </div>
-            <div className='item'>
-              <div className='swiper-slide swiper-slide-active'>
-                <ProductCard status={status} />
-              </div>
-            </div>
-            <div className='item'>
-              <div className='swiper-slide swiper-slide-active'>
-                <ProductCard status={status} />
-              </div>
-            </div>
-            <div className='item'>
-              <div className='swiper-slide swiper-slide-active'>
-                <ProductCard status={status} />
-              </div>
-            </div>
-            <div className='item'>
-              <div className='swiper-slide swiper-slide-active'>
-                <ProductCard status={status} />
-              </div>
-            </div>
+            ))}
           </ReactOwlCarousel>
         </div>
         <div
