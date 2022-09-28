@@ -1,6 +1,14 @@
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
+import CheckoutItem from 'src/components/CheckoutItem';
+import { productData } from 'src/data/data';
+import convertPrice from 'src/helpers/convertPrice';
+import images from 'src/static/images/images';
 
 function Checkout() {
+  const cart = JSON.parse(localStorage.getItem('cart'));
+  const [totalPrice, setTotalPrice] = useState(0);
+
   return (
     <div className='checkout_style'>
       <div className='multistep'>
@@ -12,14 +20,14 @@ function Checkout() {
           <span className='wrap'>
             <span className='order-summary-toggle__inner'>
               <span className='order-summary-toggle__text expandable'>
-                Đơn hàng (19 sản phẩm)
+                Đơn hàng ({cart.length} sản phẩm)
               </span>
               <span
                 className='order-summary-toggle__total-recap'
                 data-tg-refresh='refreshDiscount'
                 id='order-summary-total-recap'
               >
-                4.731.000₫
+                {/* {convertPrice(totalPrice)} */}
               </span>
             </span>
           </span>
@@ -34,7 +42,7 @@ function Checkout() {
                     <img
                       className='logo__image  logo__image--small'
                       alt='Mew Fashion'
-                      src='//bizweb.dktcdn.net/100/350/547/themes/812519/assets/logo.png?1652960420215'
+                      src={images.logo}
                     />
                   </Link>
                 </div>
@@ -436,7 +444,9 @@ function Checkout() {
             </main>
             <aside className='sidebar'>
               <div className='sidebar__header'>
-                <h2 className='sidebar__title'>Đơn hàng (2 sản phẩm)</h2>
+                <h2 className='sidebar__title'>
+                  Đơn hàng ({cart.length} sản phẩm)
+                </h2>
               </div>
               <div className='sidebar__content'>
                 <div
@@ -469,68 +479,13 @@ function Checkout() {
                           </tr>
                         </thead>
                         <tbody>
-                          <tr className='product'>
-                            <td className='product__image'>
-                              <div className='product-thumbnail'>
-                                <div
-                                  className='product-thumbnail__wrapper'
-                                  data-tg-static
-                                >
-                                  <img
-                                    src='//bizweb.dktcdn.net/thumb/thumb/100/350/547/products/8-1-f18fc601-b8b7-4cb2-a19d-530eab101793-1-1.jpg?v=1627031954153'
-                                    alt=''
-                                    className='product-thumbnail__image'
-                                  />
-                                </div>
-                                <span className='product-thumbnail__quantity'>
-                                  1
-                                </span>
-                              </div>
-                            </td>
-                            <th className='product__description'>
-                              <span className='product__description__name'>
-                                Áo thun T-shirt M-F 08
-                              </span>
-                              <span className='product__description__property'>
-                                M / Vàng
-                              </span>
-                            </th>
-                            <td className='product__quantity visually-hidden'>
-                              <em>Số lượng:</em> 1
-                            </td>
-                            <td className='product__price'>249.000₫</td>
-                          </tr>
-                          <tr className='product'>
-                            <td className='product__image'>
-                              <div className='product-thumbnail'>
-                                <div
-                                  className='product-thumbnail__wrapper'
-                                  data-tg-static
-                                >
-                                  <img
-                                    src='//bizweb.dktcdn.net/thumb/thumb/100/350/547/products/9.jpg?v=1626963549590'
-                                    alt=''
-                                    className='product-thumbnail__image'
-                                  />
-                                </div>
-                                <span className='product-thumbnail__quantity'>
-                                  1
-                                </span>
-                              </div>
-                            </td>
-                            <th className='product__description'>
-                              <span className='product__description__name'>
-                                Áo thun T-shirt M-F 06
-                              </span>
-                              <span className='product__description__property'>
-                                M / Hồng
-                              </span>
-                            </th>
-                            <td className='product__quantity visually-hidden'>
-                              <em>Số lượng:</em> 1
-                            </td>
-                            <td className='product__price'>249.000₫</td>
-                          </tr>
+                          {cart.map(cartItem => (
+                            <CheckoutItem
+                              key={cartItem.id}
+                              item={cartItem}
+                              setTotalPrice={setTotalPrice}
+                            />
+                          ))}
                         </tbody>
                       </table>
                     </div>
@@ -609,7 +564,9 @@ function Checkout() {
                         <tbody className='total-line-table__tbody'>
                           <tr className='total-line total-line--subtotal'>
                             <th className='total-line__name'>Tạm tính</th>
-                            <td className='total-line__price'>498.000₫</td>
+                            <td className='total-line__price'>
+                              {convertPrice(totalPrice)}
+                            </td>
                           </tr>
                           <tr className='total-line total-line--shipping-fee'>
                             <th className='total-line__name'>Phí vận chuyển</th>
@@ -625,7 +582,7 @@ function Checkout() {
                             </th>
                             <td className='total-line__price'>
                               <span className='payment-due__price'>
-                                498.000₫
+                                {convertPrice(totalPrice)}
                               </span>
                             </td>
                           </tr>

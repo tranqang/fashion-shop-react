@@ -32,6 +32,14 @@ const routes = [
     element: <News />,
   },
   {
+    path: '/tin-tuc/kinh-nghiem-phoi-do',
+    element: <News />,
+  },
+  {
+    path: '/tin-tuc/su-kien',
+    element: <News />,
+  },
+  {
     path: '/tin-tuc/:newsId',
     element: <NewsDetails />,
   },

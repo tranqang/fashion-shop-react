@@ -6,8 +6,11 @@ import CartIcon from './icons/CartIcon';
 import HeaderNav from './HeaderNav';
 import ProfileIcon from './icons/ProfileIcon';
 import SearchBlock from './SearchBlock';
+import { useState } from 'react';
+import { useEffect } from 'react';
 
 function Header() {
+  const cart = useSelector(state => state.cart);
   return (
     <div className='col-left w-100 position-fixed pt-0 pb-0 bg-white'>
       <div className='logo_mb text-center p-1 bg-grey  d-lg-none'>
@@ -61,7 +64,11 @@ function Header() {
                   to='/cart'
                 >
                   <CartIcon />
-                  <span className='btn-cart-indicator position-absolute d-none'></span>
+                  {cart.length > 0 && (
+                    <span className='btn-cart-indicator position-absolute'>
+                      {cart.length}
+                    </span>
+                  )}
                 </Link>
               </div>
             </div>

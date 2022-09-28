@@ -14,19 +14,33 @@ import { productData } from 'src/data/data';
 
 function ProductDetails() {
   const { productId } = useParams();
+  const [relatedProduct, setRelatedProduct] = useState([]);
   const [productDetail, setProductDetail] = useState({});
-  const [colorSelect, setColorSelect] = useState({});
+  const [colorSelect, setColorSelect] = useState({ color: null });
   const [productImg, setProductImg] = useState({});
-
   useEffect(() => {
     const product = productData.find(product => product.id === productId - 0);
     setProductDetail(product);
+    const related = productData
+      .filter(
+        current =>
+          current.categoryId === product.categoryId && current.id !== product.id
+      )
+      .map(item => item.id);
+    setRelatedProduct(related);
   }, [productId]);
   const [showSizeModal, setShowSizeModal] = useState(false);
   const options = {
     status: false,
     nav: false,
     items: 4,
+    autoplay: true,
+    responsive: {
+      0: { items: 1 },
+      586: { items: 2 },
+      768: { items: 3 },
+      992: { items: 4 },
+    },
   };
   useEffect(() => {
     if (productDetail.color_image) {
@@ -73,7 +87,11 @@ function ProductDetails() {
         </div>
       </div>
       <div className='row clearfix bg-white pt-4'>
-        {/* <ProductSlide title='Sản phẩm liên quan' {...options} /> */}
+        <ProductSlide
+          title='Sản phẩm liên quan'
+          data={relatedProduct}
+          {...options}
+        />
       </div>
       {showSizeModal && <SizeModal setShowSizeModal={setShowSizeModal} />}
     </div>

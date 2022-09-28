@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 import images from 'src/static/images/images';
 
 function ProductDetailsImg({ imageList }) {
-  console.log('imageList', imageList);
   const owlRef = useRef();
   return (
     <>

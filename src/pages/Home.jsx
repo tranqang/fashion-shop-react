@@ -5,10 +5,9 @@ import Banner from 'src/components/Banner';
 import BrandCard from 'src/components/BrandCard';
 import IntroduceCard from 'src/components/IntroduceCard';
 import NewsCard from 'src/components/NewsCard';
-import { catalogData } from 'src/data/data';
+import { brandData, catalogData, newsData } from 'src/data/data';
 import DefaultLayout from 'src/layouts/DefaultLayout';
 import images from 'src/static/images/images';
-
 function Home() {
   return (
     <>
@@ -32,18 +31,11 @@ function Home() {
             </Link>
           </h2>
           <article className='row'>
-            <div className='col-12 col-sm-6 col-md-6 col-lg-3'>
-              <NewsCard />
-            </div>
-            <div className='col-12 col-sm-6 col-md-6 col-lg-3'>
-              <NewsCard />
-            </div>
-            <div className='col-12 col-sm-6 col-md-6 col-lg-3'>
-              <NewsCard />
-            </div>
-            <div className='col-12 col-sm-6 col-md-6 col-lg-3'>
-              <NewsCard />
-            </div>
+            {newsData.slice(0, 4).map(news => (
+              <div key={news.id} className='col-12 col-sm-6 col-md-6 col-lg-3'>
+                <NewsCard news={news} />
+              </div>
+            ))}
           </article>
         </div>
       </div>
@@ -61,7 +53,7 @@ function Home() {
                 className='owl-theme'
                 smartSpeed={1000}
                 autoplaySpeed={1000}
-                margin={15}
+                margin={60}
                 items={5}
                 dots={false}
                 responsive={{
@@ -79,33 +71,11 @@ function Home() {
                   },
                 }}
               >
-                <div className='item'>
-                  <BrandCard />
-                </div>
-                <div className='item'>
-                  <BrandCard />
-                </div>
-                <div className='item'>
-                  <BrandCard />
-                </div>
-                <div className='item'>
-                  <BrandCard />
-                </div>
-                <div className='item'>
-                  <BrandCard />
-                </div>
-                <div className='item'>
-                  <BrandCard />
-                </div>
-                <div className='item'>
-                  <BrandCard />
-                </div>
-                <div className='item'>
-                  <BrandCard />
-                </div>
-                <div className='item'>
-                  <BrandCard />
-                </div>
+                {brandData.map(brand => (
+                  <div key={brand.id} className='item'>
+                    <BrandCard brand={brand} />
+                  </div>
+                ))}
               </ReactOwlCarousel>
             </div>
             <span

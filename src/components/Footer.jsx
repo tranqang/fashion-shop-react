@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { menuData } from 'src/data/data';
 import images from 'src/static/images/images';
 
 function Footer() {
@@ -21,103 +22,37 @@ function Footer() {
               dark với tông màu chủ đạo cyberpunk là signature.
             </div>
           </div>
-          <div className='col-xl-2 col-lg-2 col-md-4 col-sm-6 col-12 footer-left  pl-xl-5'>
-            <h3 className='footer-title mb-3 position-relative font-weight-bold mt-1'>
-              Chính sách
-            </h3>
-            <ul className='links'>
-              <li>
-                <Link to='/' title='Chính sách mua hàng'>
-                  Chính sách mua hàng
-                </Link>
-              </li>
+          {menuData
+            .filter(menu => menu.type === 2 - 0)
+            .map(item => (
+              <div
+                key={item.id}
+                className={
+                  item.id !== 37
+                    ? 'col-xl-2 col-lg-2 col-md-4 col-sm-6 col-12 footer-left  pl-xl-5'
+                    : 'col-lg-3 col-12 col-md-4 col-sm-6 footer-left'
+                }
+              >
+                <h3
+                  key={item.id}
+                  className='footer-title mb-3 position-relative font-weight-bold mt-1'
+                >
+                  {item.name}
+                </h3>
+                <ul className='links'>
+                  {item.children &&
+                    item.children.map(child => (
+                      <li key={child.id}>
+                        <Link to={child.url} title={child.name}>
+                          {child.name}
+                        </Link>
+                      </li>
+                    ))}
+                </ul>
+              </div>
+            ))}
 
-              <li>
-                <Link to='/' title='Chính sách vận chuyển'>
-                  Chính sách vận chuyển
-                </Link>
-              </li>
-
-              <li>
-                <Link to='/' title='Chính sách thanh toán'>
-                  Chính sách thanh toán
-                </Link>
-              </li>
-
-              <li>
-                <Link to='/' title='Chính sách đổi trả'>
-                  Chính sách đổi trả
-                </Link>
-              </li>
-            </ul>
-          </div>
-          <div className='col-xl-2 col-lg-2 col-md-4 col-sm-6 col-12 footer-left pl-xl-5'>
-            <h3 className='footer-title mb-3 position-relative font-weight-bold mt-1'>
-              Hỗ trợ
-            </h3>
-            <ul className='links'>
-              <li>
-                <Link to='/' title='Thông tin tư vấn 24/7'>
-                  Thông tin tư vấn 24/7
-                </Link>
-              </li>
-
-              <li>
-                <Link to='/' title='Hưỡng dẫn mua hàng'>
-                  Hưỡng dẫn mua hàng
-                </Link>
-              </li>
-
-              <li>
-                <Link to='/' title='Hướng dẫn thanh toán'>
-                  Hướng dẫn thanh toán
-                </Link>
-              </li>
-
-              <li>
-                <Link to='/' title='Hướng dẫn đổi trả'>
-                  Hướng dẫn đổi trả
-                </Link>
-              </li>
-            </ul>
-          </div>
-          <div className='col-xl-2 col-lg-2 col-md-4 col-sm-6 col-12 footer-left pl-xl-5'>
-            <h3 className='footer-title mb-3 position-relative font-weight-bold mt-1'>
-              Sản phẩm
-            </h3>
-            <ul className='links'>
-              <li>
-                <Link to='/collections/all.html' title='Áo thun'>
-                  Áo thun
-                </Link>
-              </li>
-
-              <li>
-                <Link to='/collections/all.html' title='Quần short'>
-                  Quần short
-                </Link>
-              </li>
-
-              <li>
-                <Link to='/collections/all.html' title='Sơ mi dài tay'>
-                  Sơ mi dài tay
-                </Link>
-              </li>
-
-              <li>
-                <Link to='/collections/all.html' title='Sơ mi ngắn tay'>
-                  Sơ mi ngắn tay
-                </Link>
-              </li>
-
-              <li>
-                <Link to='/collections/all.html' title='Quần dài'>
-                  Quần dài
-                </Link>
-              </li>
-            </ul>
-          </div>
-          <div className='col-lg-3 col-12 col-md-4 col-sm-6 footer-left'>
+          {/* <div className=''>
             <h3 className='footer-title mb-3 position-relative font-weight-bold'>
               Thông tin liên hệ
             </h3>
@@ -180,13 +115,13 @@ function Footer() {
                 </Link>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
       <div className='foo_bot pt-2 pb-2'>
         <div className='container'>
           <div className='row bgk align-items-center'>
-            <div className='col-lg-8 col-md-6 col-sm-12 col-xs-12'>
+            <div className='col-lg-6 col-md-8 col-sm-12 col-xs-12'>
               <div className='coppyright'>
                 Bản quyền thuộc về{' '}
                 <Link
@@ -212,7 +147,7 @@ function Footer() {
                 </span>
               </div>
             </div>
-            <div className='col-lg-4 col-md-6 col-sm-12 col-xs-12'>
+            <div className='col-lg-6 col-md-4 col-sm-12 col-xs-12'>
               <div className='footer-column-1 text-center'>
                 <div className='payment-accept'>
                   <div>

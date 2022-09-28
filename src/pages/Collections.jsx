@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, useParams } from 'react-router-dom';
+import { Link, useLocation, useParams } from 'react-router-dom';
 import BlogList from 'src/components/BlogList';
 import BreadCrumb from 'src/components/BreadCrumb';
 import FilterList from 'src/components/FilterList';
@@ -9,17 +9,33 @@ import ProductCard from 'src/components/ProductCard';
 import Sort from 'src/components/Sort';
 import DefaultLayout from 'src/layouts/DefaultLayout';
 import images from 'src/static/images/images';
-import { menuData, productData } from 'src/data/data';
+import { menuData, newsData, productData } from 'src/data/data';
 import findRoute from 'src/helpers/findRoute';
 import { useEffect } from 'react';
 import { useState } from 'react';
 
 function Collections() {
-  const params = useParams();
+  const newsDataSorted = newsData.sort((a, b) => b.rating - a.rating);
+  //   const params = useParams();
+  const { search } = useLocation();
+  const query = search.replace('?', '');
+  const queryList = query.split('&');
+  const pageQuery = queryList
+    .map(queryItem => {
+      const key = queryItem.split('=')[0];
+      const value = queryItem.split('=')[1];
+      return { key, value };
+    })
+    .find(item => item.key === 'page');
+  const page = pageQuery ? pageQuery.value - 0 : 1;
+  const [filter, setFilter] = useState([]);
   const path = window.location.pathname;
   const menuProduct = menuData.find(menu => menu.id === 3);
   const [productList, setProductList] = useState([]);
   const [currentMenu, setCurrentMenu] = useState({});
+
+  console.log(productList);
+
   useEffect(() => {
     const newMenu = findRoute(path, menuProduct);
     setCurrentMenu(newMenu);
@@ -27,7 +43,6 @@ function Collections() {
       setProductList(productData);
     } else if (newMenu.children) {
       const idList = newMenu.children.map(child => child.categoryId);
-      console.log(idList);
       setProductList(
         productData.filter(product => idList.includes(product.categoryId))
       );
@@ -72,14 +87,19 @@ function Collections() {
                     </div>
                   ))}
                 </div>
-                <Pagination />
+                <Pagination currentPage={page} totalPage={5} />
               </div>
             </div>
           </div>
           <div className='col-12 col-lg-3 order-lg-1 stk-pro'>
             <div className='align-items-center'>
-              <FilterList />
-              <BlogList title='Bài viết nối bật' padding={0} bg='#fff' />
+              <FilterList filter={filter} setFilter={setFilter} />
+              <BlogList
+                title='Bài viết nối bật'
+                padding={0}
+                bg='#fff'
+                newsList={newsDataSorted.filter(news => news.categoryId === 1)}
+              />
             </div>
           </div>
         </div>

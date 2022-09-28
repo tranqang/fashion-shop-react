@@ -54,7 +54,13 @@ import imgProduct8_3 from 'src/static/images/8-1-f18fc601-b8b7-4cb2-a19d-530eab1
 import imgProduct8_7 from 'src/static/images/8-7-0df18566-76f9-4f40-88c7-260832fc5df6.jpg';
 import hotSale from 'src/static/images/hot-sale.png';
 import brand1 from 'src/static/images/brand1.png';
-import brand2 from 'src/static/images/brand2.webp';
+import brand2 from 'src/static/images/brand2.png';
+import brand3 from 'src/static/images/brand3.png';
+import brand4 from 'src/static/images/brand4.png';
+import brand5 from 'src/static/images/brand5.png';
+import brand6 from 'src/static/images/brand6.png';
+import brand7 from 'src/static/images/brand7.png';
+import brand8 from 'src/static/images/brand8.png';
 import rightArrowIcon from 'src/static/images/icons/right-arrow.png';
 import imgBlog1 from 'src/static/images/untitled-2-1.jpg';
 import closeIcon from 'src/static/images/close.png';
@@ -63,7 +69,10 @@ import filterCloseIcon from 'src/static/images/filter_close.png';
 import sizeOption from 'src/static/images/size_option.png';
 import facebookBtn from 'src/static/images/social/fb-btn.svg';
 import googleBtn from 'src/static/images/social/gp-btn.svg';
-import newsImg from 'src/static/images/untitled-2-1.jpg';
+import newsImg1 from 'src/static/images/untitled-2-1.jpg';
+import newsImg2 from 'src/static/images/bia-thoi-trang-t44-elle-man-0421-475x317.jpg';
+import newsImg3 from 'src/static/images/thoi-trang-tham-do-oscars-2021-elle-man-cover-2-475x267.jpeg';
+import newsImg4 from 'src/static/images/phoi-do-nguoi-mang-hoa-featured-image-475x267.jpg';
 
 const images = {
   logo,
@@ -123,13 +132,22 @@ const images = {
   hotSale,
   brand1,
   brand2,
+  brand3,
+  brand4,
+  brand5,
+  brand6,
+  brand7,
+  brand8,
   rightArrowIcon,
   imgBlog1,
   closeIcon,
   sizeOption,
   facebookBtn,
   googleBtn,
-  newsImg,
+  newsImg1,
+  newsImg2,
+  newsImg3,
+  newsImg4,
   filterIcon,
   filterCloseIcon,
 };

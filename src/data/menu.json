@@ -332,5 +332,169 @@
       }
     ],
     "parentId": null
+  },
+  {
+    "id": 34,
+    "name": "Chính sách",
+    "url": "#",
+    "type": 2,
+    "children": [
+      {
+        "id": 38,
+        "name": "Chính sách mua hàng",
+        "url": "/",
+        "type": 2,
+        "children": null,
+        "parentId": 34
+      },
+      {
+        "id": 39,
+        "name": "Chính sách vận chuyển",
+        "url": "/",
+        "type": 2,
+        "children": null,
+        "parentId": 34
+      },
+      {
+        "id": 40,
+        "name": "Chính sách thanh toán",
+        "url": "/",
+        "type": 2,
+        "children": null,
+        "parentId": 34
+      },
+      {
+        "id": 41,
+        "name": "Chính sách đổi trả",
+        "url": "/",
+        "type": 2,
+        "children": null,
+        "parentId": 34
+      }
+    ],
+    "parentId": null
+  },
+  {
+    "id": 35,
+    "name": "Hỗ trợ",
+    "url": "#",
+    "type": 2,
+    "children": [
+      {
+        "id": 42,
+        "name": "Thông tin tư vấn 24/7",
+        "url": "/",
+        "type": 2,
+        "children": null,
+        "parentId": 35
+      },
+      {
+        "id": 43,
+        "name": "Hưỡng dẫn mua hàng",
+        "url": "/",
+        "type": 2,
+        "children": null,
+        "parentId": 35
+      },
+      {
+        "id": 44,
+        "name": "Hướng dẫn thanh toán",
+        "url": "/",
+        "type": 2,
+        "children": null,
+        "parentId": 35
+      },
+      {
+        "id": 45,
+        "name": "Hướng dẫn đổi trả",
+        "url": "/",
+        "type": 2,
+        "children": null,
+        "parentId": 35
+      }
+    ],
+    "parentId": null
+  },
+  {
+    "id": 36,
+    "name": "Sản phẩm",
+    "url": "#",
+    "type": 2,
+    "children": [
+      {
+        "id": 46,
+        "name": "Áo thun",
+        "url": "/collections/ao-thun",
+        "type": 2,
+        "children": null,
+        "parentId": 36
+      },
+      {
+        "id": 47,
+        "name": "Quần short",
+        "url": "/collections/quan-short",
+        "type": 2,
+        "children": null,
+        "parentId": 36
+      },
+      {
+        "id": 48,
+        "name": "Sơ mi dài tay",
+        "url": "/collections/so-mi-dai-tay",
+        "type": 2,
+        "children": null,
+        "parentId": 36
+      },
+      {
+        "id": 49,
+        "name": "Sơ mi ngắn tay",
+        "url": "/collections/so-mi-ngan-tay",
+        "type": 2,
+        "children": null,
+        "parentId": 36
+      },
+      {
+        "id": 50,
+        "name": "Quần dài",
+        "url": "/collections/quan-dai",
+        "type": 2,
+        "children": null,
+        "parentId": 36
+      }
+    ],
+    "parentId": null
+  },
+  {
+    "id": 37,
+    "name": "Thông tin liên hệ",
+    "url": "#",
+    "type": 2,
+    "children": [
+      {
+        "id": 51,
+        "name": "Địa chỉ: Ladeco Building, 266 Doi Can Street, Ba Dinh District, Hanoi.",
+        "url": "#",
+        "type": 2,
+        "children": null,
+        "parentId": 37
+      },
+      {
+        "id": 52,
+        "name": "Email: support@sapo.vn",
+        "url": "#",
+        "type": 2,
+        "children": null,
+        "parentId": 37
+      },
+      {
+        "id": 53,
+        "name": "Số điện thoại: 1900 6750",
+        "url": "#",
+        "type": 2,
+        "children": null,
+        "parentId": 37
+      }
+    ],
+    "parentId": null
   }
 ]

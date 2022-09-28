@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import images from 'src/static/images/images';
 
 function IntroduceBanner({ bgSrc, RTL, title, name, desc }) {
-  console.log(bgSrc);
   return (
     <>
       <div className='bg_pr  position-absolute w-100 h-100 d-none d-lg-block'>

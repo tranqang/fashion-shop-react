@@ -8,7 +8,6 @@ function ProductSlide({ title, data, ...options }) {
   const { status, nav, items, time, responsive } = options;
   const owlRef = useRef();
   const productList = productData.filter(item => data.includes(item.id));
-  console.log(productList);
   return (
     <div className='m_product col-12 mt-5 mb-5'>
       {title && (

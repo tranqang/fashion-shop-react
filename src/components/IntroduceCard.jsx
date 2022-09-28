@@ -3,7 +3,6 @@ import IntroduceBanner from './IntroduceBanner';
 import ProductSlide from './ProductSlide';
 
 function IntroduceCard({ catalog }) {
-  console.log(catalog);
   const { RTL, bgSrc, title, name, desc } = catalog;
   const props = { RTL, bgSrc, title, name, desc };
   const options = {

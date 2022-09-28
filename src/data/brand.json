@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "name": "Gucci",
+    "logo": "brand1"
+  },
+  {
+    "id": 2,
+    "name": "Dolce & Gabbana",
+    "logo": "brand2"
+  },
+  {
+    "id": 3,
+    "name": "Louis Vuitton",
+    "logo": "brand3"
+  },
+  {
+    "id": 4,
+    "name": "Adidas",
+    "logo": "brand4"
+  },
+  {
+    "id": 5,
+    "name": "Nike",
+    "logo": "brand5"
+  },
+  {
+    "id": 6,
+    "name": "Chanel",
+    "logo": "brand6"
+  },
+  {
+    "id": 7,
+    "name": "Hermes",
+    "logo": "brand7"
+  },
+  {
+    "id": 8,
+    "name": "Dior",
+    "logo": "brand8"
+  }
+]
