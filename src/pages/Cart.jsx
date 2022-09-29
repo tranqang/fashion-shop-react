@@ -11,9 +11,6 @@ import convertPrice from 'src/helpers/convertPrice';
 function Cart() {
   const cart = useSelector(state => state.cart);
   const [totalPrice, setTotalPrice] = useState(0);
-  useEffect(() => {
-    console.log(cart);
-  }, [cart]);
 
   return (
     <div className='container'>

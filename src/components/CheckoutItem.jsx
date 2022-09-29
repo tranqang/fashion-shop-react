@@ -23,7 +23,11 @@ function CheckoutItem({ item, setTotalPrice }) {
       <td className='product__image'>
         <div className='product-thumbnail'>
           <div className='product-thumbnail__wrapper' data-tg-static>
-            <img src={colorImage} alt='' className='product-thumbnail__image' />
+            <img
+              src={colorImage}
+              alt=''
+              className='product-thumbnail__image mb'
+            />
           </div>
           <span className='product-thumbnail__quantity'>{item.quantity}</span>
         </div>

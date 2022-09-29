@@ -2128,10 +2128,13 @@ h1.title_art {
   max-height: 100px;
   max-width: 75px;
   width: auto;
-  /* display: none; */
+  display: none;
   top: 50%;
   transform: translateY(-50%);
   left: 15px;
+}
+.product img.mb {
+  display: block;
 }
 @media screen and (min-width: 992px) {
   .product img {

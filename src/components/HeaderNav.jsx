@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import HeaderSubNav from './HeaderSubNav';
 import { menuData } from 'src/data/data';
 function HeaderNav() {
+  const path = window.location.pathname;
   return (
     <div className='navigation-block mr-lg-auto'>
       <ul
@@ -10,7 +11,7 @@ function HeaderNav() {
         className='p-0 m-0 menu_pc list-unstyled position-static d-lg-flex justify-content-lg-end'
       >
         {menuData
-          .filter(menu => menu.type === 1 - 0)
+          .filter(menu => menu.type === 1)
           .map(menuItem => {
             const { id, name, url, children } = menuItem;
             return (
@@ -25,7 +26,7 @@ function HeaderNav() {
                   title={name}
                   className={`font-weight-bold d-block pt-2 pb-2 ${
                     children ? 'pr-4' : 'pr-lg-3 pr-2'
-                  } position-relative`}
+                  } position-relative ${url === path ? 'active' : ''}`}
                 >
                   {name}
                   {children && (

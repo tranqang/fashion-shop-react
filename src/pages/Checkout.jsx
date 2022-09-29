@@ -153,6 +153,7 @@ function Checkout() {
                                 />
                               </div>
                             </div>
+
                             <div className='field-group'>
                               <div className='field field--show-floating-label '>
                                 <div className='field__input-wrapper field__input-wrapper--select2'>
@@ -167,7 +168,7 @@ function Checkout() {
                                     id='billingProvince'
                                     size={1}
                                     type='text'
-                                    className='field__input field__input--select select2-hidden-accessible'
+                                    className='field__input field__input--select'
                                   >
                                     <option value hidden>
                                       ---
@@ -242,7 +243,7 @@ function Checkout() {
                                     data-select2-id='select2-data-1-fkkv'
                                     style={{ width: '100%' }}
                                   >
-                                    <span className='selection'>
+                                    {/* <span className='selection'>
                                       <span
                                         className='select2-selection select2-selection--single'
                                         role='combobox'
@@ -263,7 +264,7 @@ function Checkout() {
                                           <b role='presentation' />
                                         </span>
                                       </span>
-                                    </span>
+                                    </span> */}
                                     <span
                                       className='dropdown-wrapper'
                                       aria-hidden='true'

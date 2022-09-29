@@ -7,8 +7,8 @@
       "https://bizweb.dktcdn.net/thumb/1024x1024/100/350/547/products/8-2-5af36a55-cf3a-4c5e-85c2-a7ede55897e6.jpg?v=1627031957000"
     ],
     "categoryId": 8,
-    "averagePrice": 249,
-    "averageOldPrice": 279,
+    "average_price": 249,
+    "average_old_price": 279,
     "price": [
       {
         "size": 1,
@@ -177,8 +177,8 @@
       "https://bizweb.dktcdn.net/thumb/1024x1024/100/350/547/products/6-3-9b8e9f17-b23b-449a-b26d-76be93a812ef.jpg?v=1626960143000"
     ],
     "categoryId": 9,
-    "averagePrice": 249,
-    "averageOldPrice": 279,
+    "average_price": 249,
+    "average_old_price": 279,
     "price": [
       {
         "size": 1,
@@ -285,8 +285,8 @@
       "https://bizweb.dktcdn.net/thumb/1024x1024/100/350/547/products/8-2-5af36a55-cf3a-4c5e-85c2-a7ede55897e6.jpg?v=1627031957000"
     ],
     "categoryId": 10,
-    "averagePrice": 249,
-    "averageOldPrice": 279,
+    "average_price": 249,
+    "average_old_price": 279,
     "price": [
       {
         "size": 1,
@@ -455,8 +455,8 @@
       "https://bizweb.dktcdn.net/thumb/1024x1024/100/350/547/products/6-3-9b8e9f17-b23b-449a-b26d-76be93a812ef.jpg?v=1626960143000"
     ],
     "categoryId": 11,
-    "averagePrice": 249,
-    "averageOldPrice": 279,
+    "average_price": 249,
+    "average_old_price": 279,
     "price": [
       {
         "size": 1,
@@ -563,8 +563,8 @@
       "https://bizweb.dktcdn.net/thumb/1024x1024/100/350/547/products/5-2-jpeg.jpg?v=1620384919000"
     ],
     "categoryId": 12,
-    "averagePrice": 199,
-    "averageOldPrice": 279,
+    "average_price": 199,
+    "average_old_price": 279,
     "price": [
       {
         "size": 27,
@@ -609,8 +609,8 @@
       "https://bizweb.dktcdn.net/100/350/547/products/2-2.jpg?v=1620384260477"
     ],
     "categoryId": 13,
-    "averagePrice": 199,
-    "averageOldPrice": 279,
+    "average_price": 199,
+    "average_old_price": 279,
     "price": [
       {
         "size": null,
@@ -641,8 +641,8 @@
       "https://bizweb.dktcdn.net/thumb/1024x1024/100/350/547/products/5-2-jpeg.jpg?v=1620384919000"
     ],
     "categoryId": 14,
-    "averagePrice": 199,
-    "averageOldPrice": 279,
+    "average_price": 199,
+    "average_old_price": 279,
     "price": [
       {
         "size": 27,
@@ -687,8 +687,8 @@
       "https://bizweb.dktcdn.net/100/350/547/products/2-2.jpg?v=1620384260477"
     ],
     "categoryId": 15,
-    "averagePrice": 199,
-    "averageOldPrice": 279,
+    "average_price": 199,
+    "average_old_price": 279,
     "price": [
       {
         "size": null,
@@ -719,8 +719,8 @@
       "https://bizweb.dktcdn.net/thumb/1024x1024/100/350/547/products/8-1-jpeg-1-1.jpg?v=1627032509000"
     ],
     "categoryId": 16,
-    "averagePrice": 199,
-    "averageOldPrice": 279,
+    "average_price": 199,
+    "average_old_price": 279,
     "price": [
       {
         "size": 1,
@@ -766,8 +766,8 @@
       "https://bizweb.dktcdn.net/100/350/547/products/7-1-fb34929a-14c3-452a-b2e0-f40d28b10a9f-1.jpg?v=1627032583990"
     ],
     "categoryId": 17,
-    "averagePrice": 199,
-    "averageOldPrice": 279,
+    "average_price": 199,
+    "average_old_price": 279,
     "price": [
       {
         "size": 1,
@@ -811,8 +811,8 @@
       "https://bizweb.dktcdn.net/100/350/547/products/7-1-fb34929a-14c3-452a-b2e0-f40d28b10a9f-1.jpg?v=1627032583990"
     ],
     "categoryId": 17,
-    "averagePrice": 199,
-    "averageOldPrice": 279,
+    "average_price": 199,
+    "average_old_price": 279,
     "price": [
       {
         "size": 1,
@@ -856,8 +856,8 @@
       "https://bizweb.dktcdn.net/100/350/547/products/7-1-fb34929a-14c3-452a-b2e0-f40d28b10a9f-1.jpg?v=1627032583990"
     ],
     "categoryId": 17,
-    "averagePrice": 199,
-    "averageOldPrice": 279,
+    "average_price": 199,
+    "average_old_price": 279,
     "price": [
       {
         "size": 1,
@@ -901,8 +901,8 @@
       "https://bizweb.dktcdn.net/100/350/547/products/7-1-fb34929a-14c3-452a-b2e0-f40d28b10a9f-1.jpg?v=1627032583990"
     ],
     "categoryId": 17,
-    "averagePrice": 199,
-    "averageOldPrice": 279,
+    "average_price": 199,
+    "average_old_price": 279,
     "price": [
       {
         "size": 1,
@@ -946,8 +946,8 @@
       "https://bizweb.dktcdn.net/100/350/547/products/7-1-fb34929a-14c3-452a-b2e0-f40d28b10a9f-1.jpg?v=1627032583990"
     ],
     "categoryId": 17,
-    "averagePrice": 199,
-    "averageOldPrice": 279,
+    "average_price": 199,
+    "average_old_price": 279,
     "price": [
       {
         "size": 1,
@@ -991,8 +991,8 @@
       "https://bizweb.dktcdn.net/thumb/1024x1024/100/350/547/products/8-1-jpeg-1-1.jpg?v=1627032509000"
     ],
     "categoryId": 18,
-    "averagePrice": 199,
-    "averageOldPrice": 279,
+    "average_price": 199,
+    "average_old_price": 279,
     "price": [
       {
         "size": 1,
@@ -1038,8 +1038,8 @@
       "https://bizweb.dktcdn.net/100/350/547/products/7-1-fb34929a-14c3-452a-b2e0-f40d28b10a9f-1.jpg?v=1627032583990"
     ],
     "categoryId": 19,
-    "averagePrice": 199,
-    "averageOldPrice": 279,
+    "average_price": 199,
+    "average_old_price": 279,
     "price": [
       {
         "size": 1,
@@ -1083,8 +1083,8 @@
       "https://bizweb.dktcdn.net/100/350/547/products/2-2-jpeg.jpg?v=1620448324543"
     ],
     "categoryId": 20,
-    "averagePrice": 199,
-    "averageOldPrice": 279,
+    "average_price": 199,
+    "average_old_price": 279,
     "price": [
       {
         "size": 1,
@@ -1128,8 +1128,8 @@
       "https://bizweb.dktcdn.net/100/350/547/products/2-2-jpeg.jpg?v=1620448324543"
     ],
     "categoryId": 21,
-    "averagePrice": 199,
-    "averageOldPrice": 279,
+    "average_price": 199,
+    "average_old_price": 279,
     "price": [
       {
         "size": 1,
@@ -1173,8 +1173,8 @@
       "https://bizweb.dktcdn.net/100/350/547/products/2-2-jpeg.jpg?v=1620448324543"
     ],
     "categoryId": 22,
-    "averagePrice": 199,
-    "averageOldPrice": 279,
+    "average_price": 199,
+    "average_old_price": 279,
     "price": [
       {
         "size": 1,
@@ -1218,8 +1218,8 @@
       "https://bizweb.dktcdn.net/100/350/547/products/2-2-jpeg.jpg?v=1620448324543"
     ],
     "categoryId": 23,
-    "averagePrice": 199,
-    "averageOldPrice": 279,
+    "average_price": 199,
+    "average_old_price": 279,
     "price": [
       {
         "size": 1,

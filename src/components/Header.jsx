@@ -8,6 +8,7 @@ import ProfileIcon from './icons/ProfileIcon';
 import SearchBlock from './SearchBlock';
 import { useState } from 'react';
 import { useEffect } from 'react';
+import { menuData } from 'src/data/data';
 
 function Header() {
   const cart = useSelector(state => state.cart);

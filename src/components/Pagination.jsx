@@ -2,7 +2,6 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 function Pagination({ currentPage, totalPage }) {
-  console.log(currentPage);
   return (
     <ul className='pagination d-flex justify-content-center clearfix mt-4 mb-5'>
       <li className='page-item'>

@@ -32,26 +32,58 @@ function Collections() {
   const path = window.location.pathname;
   const menuProduct = menuData.find(menu => menu.id === 3);
   const [productList, setProductList] = useState([]);
+  const [productDisplay, setProductDisplay] = useState([]);
+  const [productOriginal, setProductOriginal] = useState([]);
   const [currentMenu, setCurrentMenu] = useState({});
+  const productPerPage = 9;
+  const totalPage = Math.ceil(productList.length / productPerPage);
+  console.log(filter);
+  useEffect(() => {
+    const filterPrice = filter.find(item => item.parentId === 2);
 
-  console.log(productList);
+    if (filterPrice) {
+      const [min, max] = filterPrice.key;
+      const newProductList = productOriginal.filter(
+        product => product.average_price > min && product.average_price < max
+      );
+      setProductList(newProductList);
+      return;
+    }
+    const filterCategory = filter.find(item => item.parentId === 3);
+    console.log(filterCategory);
+    setProductList(productOriginal);
+  }, [filter]);
 
   useEffect(() => {
     const newMenu = findRoute(path, menuProduct);
     setCurrentMenu(newMenu);
     if (newMenu.categoryId === null) {
       setProductList(productData);
+      setProductOriginal(productData);
     } else if (newMenu.children) {
       const idList = newMenu.children.map(child => child.categoryId);
       setProductList(
+        productData.filter(product => idList.includes(product.categoryId))
+      );
+      setProductOriginal(
         productData.filter(product => idList.includes(product.categoryId))
       );
     } else {
       setProductList(
         productData.filter(product => product.categoryId === newMenu.categoryId)
       );
+      setProductOriginal(
+        productData.filter(product => product.categoryId === newMenu.categoryId)
+      );
     }
+    setFilter([]);
   }, [path, menuProduct]);
+
+  useEffect(() => {
+    const startIndex = (page - 1) * productPerPage;
+    const endIndex = page * productPerPage;
+    setProductDisplay(productList.slice(startIndex, endIndex));
+  }, [page, productList]);
 
   return (
     <div className='container'>
@@ -78,7 +110,7 @@ function Collections() {
             <div className='collection'>
               <div className='category-products position-relative mt-4 mb-4'>
                 <div className='row slider-items'>
-                  {productList.map(product => (
+                  {productDisplay.map(product => (
                     <div
                       key={product.id}
                       className='col-xl-3 col-lg-4 col-md-4 col-sm-6 col-6 product-grid-item-lm'
@@ -87,7 +119,7 @@ function Collections() {
                     </div>
                   ))}
                 </div>
-                <Pagination currentPage={page} totalPage={5} />
+                <Pagination currentPage={page} totalPage={totalPage} />
               </div>
             </div>
           </div>

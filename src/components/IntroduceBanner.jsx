@@ -9,7 +9,7 @@ function IntroduceBanner({ bgSrc, RTL, title, name, desc }) {
         <div
           className={`fix-image${RTL ? '' : '-left'} position-fixed h-100`}
           style={{
-            backgroundImage: `url(${images[bgSrc]})`,
+            backgroundImage: `url("/static/media/bg_product_1.2a867a0d137b8286dd37.webp")`,
           }}
         ></div>
         <div className='m_infor text-center position-absolute p-5'>

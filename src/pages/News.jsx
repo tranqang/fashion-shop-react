@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import BlogCard from 'src/components/BlogCard';
 import BlogList from 'src/components/BlogList';
 import BreadCrumb from 'src/components/BreadCrumb';
@@ -9,6 +9,18 @@ import DefaultLayout from 'src/layouts/DefaultLayout';
 
 function News() {
   const newsDataSorted = newsData.sort((a, b) => b.rating - a.rating);
+  const { search } = useLocation();
+  const query = search.replace('?', '');
+  const queryList = query.split('&');
+  const pageQuery = queryList
+    .map(queryItem => {
+      const key = queryItem.split('=')[0];
+      const value = queryItem.split('=')[1];
+      return { key, value };
+    })
+    .find(item => item.key === 'page');
+  const page = pageQuery ? pageQuery.value - 0 : 1;
+
   return (
     <div className='container pb-3'>
       <BreadCrumb from='Trang chủ' to='Tin tức' />
@@ -25,7 +37,7 @@ function News() {
               <BlogCard size='sm' news={newsDataSorted[2]} />
             </div>
           </article>
-          <Pagination />
+          <Pagination currentPage={page} totalPage={4} />
         </div>
         <div className='col-xl-4 col-lg-4 col-12'>
           <div className='stk-pro'>
